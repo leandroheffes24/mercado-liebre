@@ -12,9 +12,75 @@ body{
 /*--------------- HEADER ---------------*/
 header{
     background-color: #EAC926;
+    padding: 20px;
+}
+
+.logo-header{
+    max-width: 250px;
+}
+
+.copy-header{
+    margin: 30px 0;
+    text-align: center;
+}
+
+.hamburguer-menu{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    max-width: 45px;
+    background-color: #1259c3;
+    margin: auto;
+    text-align: center;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.bottom-header-nav{
+    display: none;
 }
 
 .nav-bar a, .login-bar a{
     text-decoration: none;
     color: black;
+}
+
+/*--------------- MEDIA QUERIES ---------------*/
+
+/* TABLET */
+@media(min-width: 768px){
+    .hamburguer-menu{
+        display: none;
+    }
+    .top-header-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-header{
+        text-align: right;
+    }
+    .bottom-header-nav{
+        display: flex;
+        margin-top: 40px;
+        justify-content: space-between;
+    }
+    .bottom-header-nav ul{
+        list-style: none;
+        display: flex;
+    }
+    .bottom-header-nav ul li{
+        margin: 0 6px;
+    }
+}
+
+/*DESKTOP*/
+@media (min-width: 1200px){
+    .top-header-container, .bottom-header-nav{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .bottom-header-nav{
+        margin-top: 40px;
+    }
 }
