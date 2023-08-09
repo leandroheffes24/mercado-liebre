@@ -1,3 +1,4 @@
+/*--------------- ESTILOS GENERALES ---------------*/
 *{
     margin: 0;
     padding: 0;
@@ -6,4 +7,14 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+}
+
+/*--------------- HEADER ---------------*/
+header{
+    background-color: #EAC926;
+}
+
+.nav-bar a, .login-bar a{
+    text-decoration: none;
+    color: black;
 }
