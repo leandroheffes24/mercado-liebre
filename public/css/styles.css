@@ -1,4 +1,5 @@
 /*--------------- ESTILOS GENERALES ---------------*/
+
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +11,7 @@ body{
 }
 
 /*--------------- HEADER ---------------*/
+
 header{
     background-color: #EAC926;
     padding: 20px;
@@ -46,10 +48,68 @@ header{
     color: black;
 }
 
+/*--------------- MAIN ---------------*/
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+.product-article{
+    margin: 10px;
+    border: 1px solid red;
+}
+
+.product-image{
+    width: 100%;
+}
+
+.product-details-container{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    position: relative;
+}
+
+.product-details-container > .product-truck-logo{
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.price{
+    width: 30%;
+    font-size: 1.5rem;
+}
+
+.discount{
+    color: #39b54a;
+    width: 70%;
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.product-description{
+    display: none;
+    margin-top: 20px;
+}
+
 /*--------------- MEDIA QUERIES ---------------*/
 
 /* TABLET */
 @media(min-width: 768px){
+    /* HEADER */
     .hamburguer-menu{
         display: none;
     }
@@ -71,6 +131,15 @@ header{
     }
     .bottom-header-nav ul li{
         margin: 0 6px;
+    }
+    /* MAIN */
+    .product-article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .product-description{
+        display: block;
+        font-weight: 100;
+        color: #666;
     }
 }
 
