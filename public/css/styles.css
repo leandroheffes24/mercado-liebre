@@ -8,6 +8,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
 }
 
 /*--------------- HEADER ---------------*/
@@ -55,8 +56,19 @@ main{
     margin: auto;
 }
 
+.main-section-title{
+    width: 100%;
+    margin: 20px 0;
+}
+
+.main-section-top{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .product-article{
-    margin: 10px 0;
+    margin: 10px;
+    flex-grow: 1;
 }
 
 .product-image{
@@ -64,7 +76,8 @@ main{
 }
 
 .product-details-container{
-    border-top: 1px solid #ebebeb;
+    background-color: white;
+    border-top: 1px solid red;
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -131,14 +144,15 @@ main{
         margin: 0 6px;
     }
     /* MAIN */
+    .main-section-top{
+        justify-content: space-between;
+    }
     .product-article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    .price{
-        font-size: 1.5rem;
+        width: 47%;
     }
     .discount{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     .product-description{
         display: block;
@@ -149,11 +163,16 @@ main{
 
 /*DESKTOP*/
 @media (min-width: 1200px){
+    /* HEADER */
     .top-header-container, .bottom-header-nav{
         max-width: 1200px;
         margin: auto;
     }
     .bottom-header-nav{
         margin-top: 40px;
+    }
+    /* MAIN */
+    .product-article{
+        width: 23%;
     }
 }
