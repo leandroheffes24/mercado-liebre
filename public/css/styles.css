@@ -116,6 +116,23 @@ main{
     margin-top: 20px;
 }
 
+/*--------------- FOOTER ---------------*/
+
+footer{
+    background-color: white;
+    padding: 40px 0;
+}
+
+.footer-article{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.footer-icon{
+    color: #1259c3;
+    font-size: 2em;
+}
+
 /*--------------- MEDIA QUERIES ---------------*/
 
 /* TABLET */
