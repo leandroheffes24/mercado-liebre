@@ -16,6 +16,10 @@
         <!--TOP HEADER CONTAINER-->
         <div class="top-header-container">
             <img class="logo-header" src="images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre">
+            <form action="" method="get" class="search-form">
+                <label for="search"></label>
+                <input type="text" id="search" name="search" placeholder="Buscar productos, marcas y más" class="search-input">
+            </form>
             <p class="copy-header">
                 <i class="fa-solid fa-hand-holding-dollar"></i>
                 Comprá en cuotas y sin tarjeta de crédito
@@ -60,8 +64,21 @@
     </header>
 
     <!-- ---------------------------- MAIN ---------------------------- -->
-    <main>
-        
+    <main class="login-main">
+        <section>
+            <h2 class="main-section-title">Ingresá</h2>
+            <form action="" method="POST" class="login-form">
+                <div class="form-div">
+                    <label for="username"></label>
+                    <input type="text" id="username" name="username" placeholder="Nombre de usuario" class="form-input">
+                </div>
+                <div class="form-div">
+                    <label for="password"></label>
+                    <input type="password" id="username" name="username" placeholder="Contraseña" class="form-input">
+                </div>
+                <button type="submit" class="login-button">Ingresar</button>
+            </form>
+        </section>
     </main>
 
     <!-- ---------------------------- FOOTER ---------------------------- -->
