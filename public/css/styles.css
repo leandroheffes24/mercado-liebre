@@ -116,6 +116,53 @@ main{
     margin-top: 20px;
 }
 
+/* CREATE ACCOUNT FORM */
+.create-account-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.form-input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-div{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.name-div{
+    width: 49%;
+}
+
+.label-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.names-input{
+    width: 100%;
+}
+
+.interest-category-option, .user-profile-option{
+    width: 100%;
+    margin-top: 13px;
+}
+
+.button-form{
+    width: 49%;
+    padding: 10px;
+    background-color: #1259c3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
 /*--------------- FOOTER ---------------*/
 
 footer{
@@ -125,12 +172,16 @@ footer{
 
 .footer-article{
     text-align: center;
-    margin-bottom: 40px;
 }
 
 .footer-icon{
     color: #1259c3;
     font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.footer-text{
+    margin-bottom: 30px;
 }
 
 /*--------------- MEDIA QUERIES ---------------*/
@@ -175,6 +226,10 @@ footer{
         display: block;
         font-weight: 100;
         color: #666;
+    }
+    /* CREATE ACCOUNT FORM*/
+    .form-input{
+        padding: 15px;
     }
 }
 
