@@ -203,17 +203,30 @@ main{
 
 footer{
     background-color: white;
-    padding: 40px 0;
+    padding: 40px 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer-article{
     text-align: center;
+    width: 100%;
+}
+
+.copyright-footer{
+    text-align: center;
+    width: 100%;
 }
 
 .footer-icon{
     color: #1259c3;
     font-size: 2em;
     margin-bottom: 10px;
+    transition: all 0.3s;
+}
+
+.footer-icon:hover{
+    color: #0022AA;
 }
 
 .footer-text{
@@ -302,6 +315,20 @@ footer{
     /* MAIN */
     .product-article{
         width: 23%;
+    }
+
+    /* FOOTER */
+    footer{
+        justify-content: space-between;
+    }
+    .footer-article{
+        width: 33%;
+        flex-grow: 1;
+        padding: 0 15px;
+    }
+
+    .copyright-footer{
+        text-align: left;
     }
 }
 
