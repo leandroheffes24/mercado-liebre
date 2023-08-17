@@ -96,10 +96,6 @@ main{
     position: relative;
 }
 
-/* .product-truck-logo{
-    animation: rotar 0.3s;
-} */
-
 .product-details-container > .product-truck-logo{
     color: #39b54a;
     display: block;
@@ -182,6 +178,11 @@ main{
     color: white;
     border: none;
     border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.button-form:hover{
+    background-color: #0022AA;
 }
 
 .login-button{
@@ -191,6 +192,11 @@ main{
     color: white;
     border: none;
     border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.login-button:hover{
+    background-color: #0022AA;
 }
 
 /*--------------- FOOTER ---------------*/
