@@ -81,6 +81,9 @@ main{
     .product-truck-logo{
         animation: rotar 0.3s forwards;
     }
+    .product-description{
+        display: block;
+    }
 }
 
 .product-image{
@@ -250,7 +253,7 @@ footer{
 
     .search-form{
         display: block;
-        padding: 0 10px;
+        padding: 0 50px;
         flex-grow: 1;
     }
 
@@ -334,8 +337,13 @@ footer{
 
 /*--------------- ANIMATIONS ---------------*/
 @keyframes rotar{
-    0%{}
     100%{
         transform: rotate(-90deg);
+    }
+}
+
+@keyframes aparecer{
+    100%{
+        display: block;
     }
 }
