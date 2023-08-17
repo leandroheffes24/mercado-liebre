@@ -73,6 +73,14 @@ main{
 .product-article{
     margin: 10px;
     flex-grow: 1;
+    transition: all 0.3s;
+}
+
+.product-article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    .product-truck-logo{
+        animation: rotar 0.3s forwards;
+    }
 }
 
 .product-image{
@@ -81,13 +89,16 @@ main{
 
 .product-details-container{
     background-color: white;
-    border-top: 1px solid red;
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
     position: relative;
 }
+
+/* .product-truck-logo{
+    animation: rotar 0.3s;
+} */
 
 .product-details-container > .product-truck-logo{
     color: #39b54a;
@@ -118,6 +129,8 @@ main{
 .product-description{
     display: none;
     margin-top: 20px;
+    font-weight: 100;
+    color: #666;
 }
 
 /* CREATE ACCOUNT FORM - LOGIN FORM */
@@ -209,54 +222,59 @@ footer{
     .hamburguer-menu{
         display: none;
     }
+
     .top-header-container{
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     .search-form{
         display: block;
         padding: 0 10px;
         flex-grow: 1;
     }
+
     .search-form .search-input{
         padding: 10px;
         border: none;
         border-radius: 5px;
-        /* margin: 0 15px; */
         width: 100%;
     }
+
     .copy-header{
         text-align: right;
     }
+
     .bottom-header-nav{
         display: flex;
         margin-top: 40px;
         justify-content: space-between;
     }
+
     .bottom-header-nav ul{
         list-style: none;
         display: flex;
     }
+
     .bottom-header-nav ul li{
         margin: 0 6px;
     }
+
     /* MAIN */
     .main-section-top{
         justify-content: space-between;
     }
+
     .product-article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
         width: 47%;
     }
+
     .discount{
         font-size: 1.1rem;
     }
-    .product-description{
-        display: block;
-        font-weight: 100;
-        color: #666;
-    }
+
     /* CREATE ACCOUNT FORM*/
     .form-input{
         padding: 15px;
@@ -270,11 +288,21 @@ footer{
         max-width: 1200px;
         margin: auto;
     }
+
     .bottom-header-nav{
         margin-top: 40px;
     }
+
     /* MAIN */
     .product-article{
         width: 23%;
+    }
+}
+
+/*--------------- ANIMATIONS ---------------*/
+@keyframes rotar{
+    0%{}
+    100%{
+        transform: rotate(-90deg);
     }
 }
