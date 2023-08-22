@@ -72,7 +72,6 @@ main{
 
 .product-article{
     margin: 10px;
-    flex-grow: 1;
     transition: all 0.3s;
 }
 
