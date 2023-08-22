@@ -6,7 +6,7 @@ const app = express()
 app.use(express.static(path.join(__dirname, "../public")))
 
 //INICIAR SERVIDOR
-const PORT = 3000
+const PORT = process.env.PORT || 3001
 app.listen(PORT, () => console.log(`Servidor corriendo en el puerto ${PORT}`))
 
 // RUTAS
